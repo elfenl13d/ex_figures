@@ -9,6 +9,7 @@ defmodule ExFigures.MixProject do
       app: :ex_figures,
       version: @version,
       elixir: "~> 1.6",
+      description: "Elixir wrapper for Appfigures API",
       source_ref: "v#{@version}",
       source_url: @project_url,
       homepage_url: @project_url,
