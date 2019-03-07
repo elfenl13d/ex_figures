@@ -35,10 +35,10 @@ defmodule ExFigures.MixProject do
       {:jason, ">= 1.0.0"},
 
       # testing & docs
-      {:ex_doc, github: "elixir-lang/ex_doc", only: :dev},
-      {:mix_test_watch, "~> 0.5", only: :dev},
+      {:ex_doc, "~> 0.19", only: :dev},
+      {:mix_test_watch, "~> 0.9", only: :dev},
       {:dialyxir, "~> 1.0.0-rc.3", only: [:dev, :test], runtime: false},
-      {:inch_ex, "~> 0.5.6", only: :docs}
+      {:inch_ex, "~> 2.0.0", only: :dev}
     ]
   end
 
