@@ -45,6 +45,7 @@ defmodule ExFigures.MixProject do
 
   defp package() do
     [
+      files: ["lib", "mix.exs", "README.md"],
       maintainers: ["Egor Mihnevich"],
       licenses: ["MIT"],
       links: %{
