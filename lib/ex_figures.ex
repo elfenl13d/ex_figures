@@ -10,7 +10,7 @@ defmodule ExFigures do
 
   @base_url "https://api.appfigures.com/v2"
 
-  @opaque t :: Tesla.Client.t()
+  @type t :: Tesla.Client.t()
   @type result :: Tesla.Env.result()
   @type option ::
           {:username, binary | {:system, binary}}
@@ -33,7 +33,7 @@ defmodule ExFigures do
     Useful for extending client with additional functionality like
     instrumentation or logging.
   """
-  @spec client([option]) :: t()
+  @spec client([option]) :: ExFigures.t()
   def client(opts \\ []) do
     username = config_value(opts, :username)
     password = config_value(opts, :password)
