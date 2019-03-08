@@ -37,7 +37,6 @@ defmodule ExFigures.MixProject do
 
       # testing & docs
       {:ex_doc, "~> 0.19", only: :dev},
-      {:mix_test_watch, "~> 0.9", only: :dev},
       {:dialyxir, "~> 1.0.0-rc.3", only: [:dev, :test], runtime: false},
       {:inch_ex, "~> 2.0.0", only: :dev}
     ]
