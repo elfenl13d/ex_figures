@@ -4,4 +4,6 @@ config :logger, :console,
   level: :debug,
   format: "$date $time [$level] $metadata$message\n"
 
-import_config "dev.secret.exs"
+if File.exists?("config/dev.secret.exs") do
+  import_config "dev.secret.exs"
+end
