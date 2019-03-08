@@ -1,6 +1,9 @@
 # ExFigures
 
-**TODO: Add description**
+Elixir wrapper for Appfigures API based on [Tesla](https://github.com/teamon/tesla) library.
+
+Appfigures provides a RESTful way to interact with reports and account data.
+More info here https://docs.appfigures.com
 
 ## Installation
 
@@ -15,7 +18,5 @@ def deps do
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/ex_figures](https://hexdocs.pm/ex_figures).
-
+## Documentation
+Documentation be found at [https://hexdocs.pm/ex_figures](https://hexdocs.pm/ex_figures).

@@ -4,10 +4,6 @@ use Mix.Config
 
 config :tesla, adapter: Tesla.Adapter.Hackney
 
-if Mix.env() == :test do
-  config :logger, :console,
-    level: :debug,
-    format: "$date $time [$level] $metadata$message\n"
-
-  config :tesla, MockClient, adapter: Tesla.Mock
+if Enum.member?([:test, :dev], Mix.env()) do
+  import_config "#{Mix.env()}.exs"
 end
