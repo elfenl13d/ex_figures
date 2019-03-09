@@ -5,6 +5,7 @@ workflow "Test & Check Formatting" {
     "Check Documentation",
     "Get Dependencies",
     "Check Coverage",
+    "Run Dialyzer",
   ]
 }
 
@@ -40,4 +41,10 @@ action "Check Coverage" {
   env = {
     MIX_ENV = "test"
   }
+}
+
+action "Run Dialyzer" {
+  uses = "elfenlaid/actions/mix@master"
+  needs = ["Test"]
+  args = "dialyzer"
 }
