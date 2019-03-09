@@ -1,4 +1,6 @@
-# ExFigures
+# ExFigures 
+[![Hex pm](http://img.shields.io/hexpm/v/ex_figures.svg?style=flat)](https://hex.pm/packages/ex_figures)
+[![Hex pm](http://img.shields.io/hexpm/l/ex_figures.svg?style=flat)](https://hex.pm/packages/ex_figures)
 
 Elixir wrapper for Appfigures API based on [Tesla](https://github.com/teamon/tesla) library.
 
