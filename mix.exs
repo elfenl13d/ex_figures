@@ -38,9 +38,9 @@ defmodule ExFigures.MixProject do
       {:jason, ">= 1.0.0"},
 
       # testing & docs
-      {:ex_doc, "~> 0.19", only: :dev},
+      {:ex_doc, "~> 0.19", only: :dev, runtime: false},
       {:dialyxir, "~> 1.0.0-rc.3", only: [:dev, :test], runtime: false},
-      {:inch_ex, "~> 2.0.0", only: :dev},
+      {:inch_ex, "~> 2.0.0", only: :dev, runtime: false},
       {:excoveralls, "~> 0.10", only: :test}
     ]
   end
