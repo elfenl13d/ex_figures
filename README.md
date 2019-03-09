@@ -3,7 +3,27 @@
 Elixir wrapper for Appfigures API based on [Tesla](https://github.com/teamon/tesla) library.
 
 Appfigures provides a RESTful way to interact with reports and account data.
-More info here https://docs.appfigures.com
+[More about API](https://docs.appfigures.com).
+
+## Client Usage Example
+
+Setup `ExFigures` client:
+
+```elixir
+client = ExFigures.client(
+  username: "username",
+  password: "password",
+  client_key: "key"
+)
+```
+
+And proceed to querying:
+
+```elixir
+{:ok, response} = ExFigures.Products.list_mine(client)
+response.status # => 200
+response.body # => [%{...}, ...]
+```
 
 ## Installation
 
