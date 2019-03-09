@@ -10,8 +10,19 @@ defmodule ExFigures do
 
   @base_url "https://api.appfigures.com/v2"
 
+  @typedoc """
+  Represents ExFigures client
+  """
   @type t :: Tesla.Client.t()
+
+  @typedoc """
+  Represents ExFigures api call result wrapped in `:ok/:error` tuple
+  """
   @type result :: Tesla.Env.result()
+
+  @typedoc """
+    Represents ExFigures client init options
+  """
   @type option ::
           {:username, binary | {:system, binary}}
           | {:password, binary | {:system, binary}}
