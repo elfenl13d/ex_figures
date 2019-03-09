@@ -19,6 +19,8 @@ defmodule ExFigures.MixProject do
       package: package(),
       docs: docs(),
       dialyzer: dializer(),
+      test_coverage: test_coverage(),
+      preferred_cli_env: cli_env(),
       deps: deps()
     ]
   end
@@ -38,7 +40,8 @@ defmodule ExFigures.MixProject do
       # testing & docs
       {:ex_doc, "~> 0.19", only: :dev},
       {:dialyxir, "~> 1.0.0-rc.3", only: [:dev, :test], runtime: false},
-      {:inch_ex, "~> 2.0.0", only: :dev}
+      {:inch_ex, "~> 2.0.0", only: :dev},
+      {:excoveralls, "~> 0.10", only: :test}
     ]
   end
 
@@ -63,6 +66,19 @@ defmodule ExFigures.MixProject do
       plt_file: {:no_warn, "priv/plts/dialyzer.plt"},
       flags: ["-Wunmatched_returns", :error_handling, :race_conditions, :underspecs]
     ]
+  end
+
+  defp cli_env() do
+    [
+      coveralls: :test,
+      "coveralls.detail": :test,
+      "coveralls.post": :test,
+      "coveralls.html": :test
+    ]
+  end
+
+  defp test_coverage() do
+    [tool: ExCoveralls]
   end
 
   defp elixirc_paths(:test), do: ["lib", "test/support"]
