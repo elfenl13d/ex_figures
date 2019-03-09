@@ -41,7 +41,10 @@ defmodule ExFigures.MixProject do
       {:ex_doc, "~> 0.19", only: :dev, runtime: false},
       {:dialyxir, "~> 1.0.0-rc.3", only: [:dev, :test], runtime: false},
       {:inch_ex, "~> 2.0.0", only: :dev, runtime: false},
-      {:excoveralls, "~> 0.10", only: :test}
+      {:excoveralls, "~> 0.10", only: :test},
+
+      # bin
+      {:briefly, "~> 0.3", only: :dev}
     ]
   end
 
