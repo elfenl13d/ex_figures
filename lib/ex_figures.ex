@@ -1,9 +1,21 @@
 defmodule ExFigures do
   @moduledoc """
-  Elixir wrapper for Appfigures API based on [Tesla](https://github.com/teamon/tesla) library.
+  Elixir wrapper for Appfigures [API](https://docs.appfigures.com)
+  based on [Tesla](https://github.com/teamon/tesla) library.
 
   Appfigures provides a RESTful way to interact with reports and account data.
-  More info here https://docs.appfigures.com
+  * [API Overview](https://docs.appfigures.com/) of what is can do
+  * [Getting started guide](https://docs.appfigures.com/api/getting-started)
+    to dwell into api key registration and first requests
+
+  Appfigures provides two ways of authentication:
+    * _basic auth_
+    * _OAuth 1.0_
+
+  Right now client supports only _basic auth_ method.
+
+  Appfigures require that any client made publicly available uses OAuth 1.0.
+  So make sure that's your client is for internal/team use only.
   """
 
   require Logger
@@ -31,7 +43,7 @@ defmodule ExFigures do
 
   @doc """
   Creates ExFigures client. The options passed affect
-  authorization and middleware extending.
+  authentication and middleware extending.
 
   Options:
     * `username` - appfigures account's username or email address.

@@ -1,8 +1,7 @@
 defmodule ExFigures.Root do
   @moduledoc """
-  The root resource provides basic information about the currently authenticated user.
-
-  More info here https://docs.appfigures.com/api/reference/v2/root
+  The [/](https://docs.appfigures.com/api/reference/v2/root)(root) resource provides
+  basic information about the currently authenticated user.
   """
 
   @doc """

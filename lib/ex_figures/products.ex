@@ -1,23 +1,32 @@
 defmodule ExFigures.Products do
   @moduledoc """
-  The /products resource provides access to product meta data in a variety of ways.
-
-  More info here https://docs.appfigures.com/products
+  The [/products](https://docs.appfigures.com/products) resource provides
+  access to product meta data in a variety of ways.
   """
 
+  @typedoc """
+  Most places you can be given products you can also ask for additional data
+  from the products by appending the `meta: true` to your request.
+  """
   @type meta_opt :: {:meta, boolean}
 
-  @typedoc false
+  @typedoc """
+  Represents products searching query arguments
+  """
   @type search_opt ::
           {:filter, binary}
           | {:page, integer}
           | {:count, integer}
           | meta_opt
 
-  @typedoc false
+  @typedoc """
+  Represents user products query arguments
+  """
   @type mine_opt :: {:store, binary} | meta_opt
 
-  @typedoc false
+  @typedoc """
+  Represents update product query argument
+  """
   @type update_attrs :: %{source: %{optional(:active) => boolean, optional(:hidden) => boolean}}
 
   @doc """
