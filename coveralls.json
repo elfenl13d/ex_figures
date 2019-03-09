@@ -1,0 +1,12 @@
+{
+  "custom_stop_words": [],
+  "coverage_options": {
+    "output_dir": "cover/",
+    "minimum_coverage": 80
+  },
+  "skip_files": [
+    "test/support/*",
+    "config/*",
+    "test/test_helper.exs"
+  ]
+}

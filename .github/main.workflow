@@ -1,6 +1,11 @@
 workflow "Test & Check Formatting" {
   on = "push"
-  resolves = ["Test", "Check Formatting", "Check Documentation"]
+  resolves = [
+    "Check Formatting",
+    "Check Documentation",
+    "Get Dependencies",
+    "Check Coverage",
+  ]
 }
 
 action "Check Formatting" {
@@ -26,4 +31,13 @@ action "Check Documentation" {
   uses = "elfenlaid/actions/mix@master"
   needs = ["Get Dependencies"]
   args = "inch"
+}
+
+action "Check Coverage" {
+  uses = "elfenlaid/actions/mix@master"
+  needs = ["Test"]
+  args = "coveralls"
+  env = {
+    MIX_ENV = "test"
+  }
 }
