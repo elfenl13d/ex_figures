@@ -44,8 +44,8 @@ end
 Documentation be found at [https://hexdocs.pm/ex_figures](https://hexdocs.pm/ex_figures).
 
 ## Resources
-- [ ] [/](https://docs.appfigures.com/api/reference/v2/root)
-- [ ] [/products](https://docs.appfigures.com/api/reference/v2/products)
+- [x] [/](https://docs.appfigures.com/api/reference/v2/root)
+- [x] [/products](https://docs.appfigures.com/api/reference/v2/products)
 - [ ] [/reports/sales](https://docs.appfigures.com/api/reference/v2/sales)
 - [ ] [/reports/revenue](https://docs.appfigures.com/api/reference/v2/revenue)
 - [ ] [/reports/subscriptions](https://docs.appfigures.com/api/reference/v2/subscriptions)
