@@ -42,3 +42,24 @@ end
 
 ## Documentation
 Documentation be found at [https://hexdocs.pm/ex_figures](https://hexdocs.pm/ex_figures).
+
+## Resources
+- [ ] [/](https://docs.appfigures.com/api/reference/v2/root)
+- [ ] [/products](https://docs.appfigures.com/api/reference/v2/products)
+- [ ] [/reports/sales](https://docs.appfigures.com/api/reference/v2/sales)
+- [ ] [/reports/revenue](https://docs.appfigures.com/api/reference/v2/revenue)
+- [ ] [/reports/subscriptions](https://docs.appfigures.com/api/reference/v2/subscriptions)
+- [ ] [/reports/ads](https://docs.appfigures.com/api/reference/v2/ads)
+- [ ] [/reports/adspend](https://docs.appfigures.com/api/reference/v2/ad-spend)
+- [ ] [/reports/ratings](https://docs.appfigures.com/api/reference/v2/reports-ratings)
+- [ ] [/reports/usage](https://docs.appfigures.com/api/reference/v2/reports/usage)
+- [ ] [/ranks](https://docs.appfigures.com/api/reference/v2/ranks)
+- [ ] [/featured](https://docs.appfigures.com/api/reference/v2/featured)
+- [ ] [/reviews](https://docs.appfigures.com/api/reference/v2/reviews)
+- [ ] [/events](https://docs.appfigures.com/api/reference/v2/events)
+- [ ] [/archive](https://docs.appfigures.com/api/reference/v2/archive)
+- [ ] [/users](https://docs.appfigures.com/api/reference/v2/users)
+- [ ] [/external_accounts](https://docs.appfigures.com/api/reference/v2/external-accounts)
+- [ ] [/data](https://docs.appfigures.com/api/reference/v2/data)
+- [ ] [/usage](https://docs.appfigures.com/api/reference/v2/usage)
+
