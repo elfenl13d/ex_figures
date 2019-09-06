@@ -33,7 +33,7 @@ defmodule ExFigures.MixProject do
 
   defp deps do
     [
-      {:tesla, "~> 1.2.1"},
+      {:tesla, "~> 1.3.0"},
       {:jason, ">= 1.0.0"},
 
       # testing & docs
